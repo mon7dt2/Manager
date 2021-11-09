@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ctn_imgProduct"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgProduct"
+                android:src="@drawable/demoproduct"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/tNameProduct"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/ctn_imgProduct"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá sản phẩm:"
+            android:id="@+id/tId"
+            android:layout_below="@+id/tNameProduct"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/ctn_imgProduct"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99999"
+            android:id="@+id/txtId"
+            android:layout_below="@+id/tNameProduct"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/tId"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:"
+            android:layout_below="@id/tId"
+            android:id="@+id/tNumber"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/ctn_imgProduct"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/txtNumber"
+            android:layout_below="@+id/tId"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/tNumber"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh mục:"
+            android:layout_below="@id/tNumber"
+            android:id="@+id/tCategory"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/ctn_imgProduct"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blazer"
+            android:id="@+id/txtCategory"
+            android:layout_below="@+id/tNumber"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/tCategory"
+            android:paddingLeft="5dp"/>
+
+    </RelativeLayout>
+</layout>

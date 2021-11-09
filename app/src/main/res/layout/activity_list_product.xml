@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:background="@color/gray2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Sản phẩm"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add"
+                android:layout_gravity="center"
+                android:id="@+id/btnAdd"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_sale"
+                android:layout_gravity="center"
+                android:id="@+id/btnSale"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:id="@+id/searchview"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_searchview"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvProducts"
+            tools:listitem="@layout/item_product"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</layout>

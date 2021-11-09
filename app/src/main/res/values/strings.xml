@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Zune Manager</string>
+
+    <!-- animation duration -->
+    <integer name="activity_anim_duration">300</integer>
+    <integer name="activity_anim_duration_out">500</integer>
+
+
+
+</resources>
